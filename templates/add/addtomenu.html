@@ -1,0 +1,189 @@
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <style>
+        h1{
+            text-align: center;
+            
+        }
+        #al{text-align: center;
+
+        }
+        #dd
+{
+    width: 100%;
+}
+        #ma
+        {
+            background-color: #d0efff;
+        }
+        h3{
+            padding-top: 10px;
+            padding-left:10px;
+            padding-bottom: 30px;
+        }
+        #table_container
+        {
+            display: flex;
+            flex-direction: column;
+        }
+
+        #table_headers
+        {
+            display: flex;
+            flex-direction: row;
+
+        }
+        #table_data
+        {
+            display: flex;
+            flex-direction: row;
+        }
+        td
+        {
+            padding: 10px 10px 10px 10px;
+        }
+        .cell
+        {
+
+            border: .1px solid black;
+            text-align: center;
+            padding: 0px 50px;
+            flex:1;
+            background-color:#BCD2E8;
+
+
+
+        }
+        #creds
+{
+   margin: auto;
+   width: 50%;
+   border: 2px solid black;
+   border-radius: 15px;
+   padding-top: 60px;
+   padding-left: 100px;
+   padding-right: 100px;
+   padding-bottom: 50px;
+}
+        .cell2
+        {
+            flex: 1;
+            border: .1px solid black;
+            text-align: center;
+            border-top: none;
+        }
+        .card
+        {
+            display: inline-block;
+            padding: 5px;
+            
+        }
+        #cred
+{
+   padding-top: 80px;
+}
+#reg
+        {
+            float: right;
+            padding-right: 650px;
+            padding-top: 20px;
+
+
+        }
+        
+        
+        
+    </style>
+    <title>AddToMenu</title>
+  </head>
+  <body>
+      <div id="ma">
+    <h1>Django Delights</h1>
+    <div class="alert alert-success" role="alert" id="al">
+        <strong>Welcome Wanderer!</strong> 
+      </div>
+      
+      </div>
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+          
+          
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Ingredients</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Menu</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Purchases</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Reports</a>
+              </li>
+              
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      <h3>Add Item To Menu</h3>
+      <div id="cred">
+    
+
+        <form method="post" id="creds">
+          {% csrf_token %} 
+          {{ form.as_p }}
+        <div class="mb-3" >
+        <label for="exampleInputEmail1" class="form-label" >Title</label>
+        <input type="name" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" name="title"
+              ><br>
+        
+        </div>
+        <div class="mb-3">
+        <label for="exampleInputPassword1" class="form-label">Quantity</label>
+        <input type="name" class="form-control" id="exampleInputPassword1" name="price" ><br>
+        </div>
+        
+        
+        <button type="submit" class="btn btn-dark" id="dd">Submit</button>
+        </form>
+        
+        
+        
+        
+        </div>
+        <form action="logout" method="get" id="reg" >
+            <button type="submit" class="btn btn-primary" id="pos">Logout</button>
+        </form>
+      
+        
+        
+        
+
+      
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+    -->
+  </body>
+</html>
