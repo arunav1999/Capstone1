@@ -1,3 +1,4 @@
+alabaster @ file:///home/ktietz/src/ci/alabaster_1611921544520/work
 anaconda-client==1.7.2
 anaconda-navigator==2.0.3
 anaconda-project @ file:///tmp/build/80754af9/anaconda-project_1610472525955/work
@@ -54,6 +55,7 @@ diff-match-patch @ file:///tmp/build/80754af9/diff-match-patch_1594828741838/wor
 distributed @ file:///tmp/build/80754af9/distributed_1620902833129/work
 dj-database-url==0.5.0
 Django==3.2.8
+django-on-heroku==1.1.2
 docutils @ file:///tmp/build/80754af9/docutils_1620827984873/work
 entrypoints==0.3
 et-xmlfile==1.0.1
@@ -157,7 +159,7 @@ ply==3.11
 prometheus-client @ file:///tmp/build/80754af9/prometheus_client_1618088486455/work
 prompt-toolkit @ file:///tmp/build/80754af9/prompt-toolkit_1616415428029/work
 psutil @ file:///tmp/build/80754af9/psutil_1612298023621/work
-
+psycopg2-binary==2.9.1
 ptyprocess @ file:///tmp/build/80754af9/ptyprocess_1609355006118/work/dist/ptyprocess-0.7.0-py2.py3-none-any.whl
 py @ file:///tmp/build/80754af9/py_1607971587848/work
 pycodestyle @ file:///home/ktietz/src/ci_mi/pycodestyle_1612807597675/work
