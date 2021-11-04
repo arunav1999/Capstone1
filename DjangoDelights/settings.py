@@ -120,12 +120,12 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/3.2/howto/static-files/
 
 STATIC_URL = '/static/'
-
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 # Default primary key field type
 # https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 ALLOWED_HOSTS = ['eb47-114-69-242-224.ngrok.io','localhost']
-STATIC_ROOT = os.path.join(BASE_DIR, 'static')
+
 
 #django_heroku.settings(locals())
